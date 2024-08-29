@@ -1,0 +1,455 @@
+
+a {
+    text-decoration: none;
+    color: purple;
+    margin: 0;
+    background-color: dar;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav-left {
+    text-decoration: None;
+    text-shadow: 10px;
+    text-align: center;
+}
+
+.nav-left a:hover {
+    color: yellowgreen;
+}
+
+.nav-right {
+    text-align: right;
+    /* Hammasini o'ng tomonga joylashtirish */
+}
+
+.nav-right a.add-post {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    /* Ostki chiziqni olib tashlash */
+}
+
+.nav-right a.add-post .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    /* Matn va rasm orasidagi masofa */
+}
+
+.nav-right a.add-post .add_matn {
+    color: green;
+    /* Matn rangini yashil qilish */
+    font-size: 14px;
+    /* Matn o'lchamini sozlash (istalgan o'lchamni qo'yishingiz mumkin) */
+}
+
+.nav-right {
+    margin-right: 20px;
+}
+
+.add_matn:hover {
+    color: red;
+}
+
+.post_entry {
+    padding: 25px;
+    margin: 10px;
+    border-top: blanchedalmond;
+    padding-top: 0;
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p .post-entry {
+    padding: 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    margin-bottom: 20px;
+    max-width: 600px;
+    /* Maksimal kenglik */
+    margin: 10px auto;
+    /* Markazlashtirish */
+}
+
+.post-entry h2 {
+    margin-top: 0;
+    font-size: 18px;
+    /* Matn o'lchami */
+}
+
+.post-entry h3 {
+    margin: 5px 0;
+    font-size: 16px;
+    /* Matn o'lchami */
+}
+
+.post-entry p {
+    margin: 10px 0;
+    font-size: 14px;
+    /* Matn o'lchami */
+}
+
+/* Actions section */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    /* Matn rangi */
+    background-color: #e9ecef;
+    /* Tugma fon rangi */
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.action-link:hover {
+    background-color: #dee2e6;
+    /* Hover holatida fon rangi */
+}
+
+.action-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.action-text {
+    font-size: 14px;
+}
+
+/* Asosiy sahifa uchun uslub */
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* Postlar orasidagi masofa */
+    max-width: 600px;
+    /* Maksimal kenglik */
+    margin: 0 auto;
+    /* Markazlashtirish */
+}
+
+/* Har bir post xabari uchun uslub */
+.post-entry {
+    padding: 15px;
+    border: 1px solid #b3b3b3;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animatsiya qo'shish */
+}
+
+.post-entry:hover {
+    transform: scale(1.02);
+    /* Hover holatida kattalashtirish */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Hover holatida soyani kuchaytirish */
+}
+
+/* Post sarlavhasi */
+.post-entry h2 a {
+    text-decoration: none;
+    /* Ostki chiziqni olib tashlash */
+    color: #007bff;
+    /* Link rangi */
+    font-size: 18px;
+    /* Font o'lchami */
+    transition: color 0.3s ease;
+    /* Animatsiya qo'shish */
+}
+
+.post-entry h2 a:hover {
+    color: #0056b3;
+    /* Hover holatida rangni o'zgartirish */
+}
+
+/* Post matni */
+.post-entry p {
+    font-size: 14px;
+    /* Matn o'lchami */
+    color: #333;
+    /* Matn rangi */
+    margin: 10px 0;
+    /* Yuqori va pastki qismdagi bo'shliq */
+}
+
+/* Formani o'zgartirish */
+.form-title {
+    text-align: center; /* Sarlavhani markazlashtirish */
+    font-size: 24px; /* Font o'lchamini sozlash */
+    color: #333; /* Sarlavha rangi */
+    margin-bottom: 20px; /* Pastki bo'shliq */
+}
+
+/* Forma uchun uslub */
+.post-form {
+    max-width: 600px; /* Maksimal kenglik */
+    margin: 0 auto; /* Markazlashtirish */
+    padding: 20px; /* Ichki bo'shliq */
+    border: 1px solid #ddd; /* Chegarani belgilash */
+    border-radius: 8px; /* Radius berish */
+    background-color: #f9f9f9; /* Fon rangi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soya qo'shish */
+    transition: box-shadow 0.3s ease; /* Animatsiya */
+}
+
+.post-form:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover holatida soyani kuchaytirish */
+}
+
+/* Forma elementlari uchun uslub */
+.post-form input[type="text"],
+.post-form input[type="email"],
+.post-form textarea {
+    width: calc(100% - 22px); /* To'liq kenglikni olish */
+    padding: 10px; /* Ichki bo'shliq */
+    border: 1px solid #ccc; /* Chegarani belgilash */
+    border-radius: 4px; /* Radius berish */
+    margin-bottom: 10px; /* Pastki bo'shliq */
+    font-size: 14px; /* Font o'lchami */
+    transition: border-color 0.3s ease; /* Animatsiya */
+}
+
+.post-form input[type="text"]:focus,
+.post-form input[type="email"]:focus,
+.post-form textarea:focus {
+    border-color: #007bff; /* Fokus holatida chegarani o'zgartirish */
+    outline: none; /* Fokus chizig'ini olib tashlash */
+}
+
+/* Submit tugmasi uchun uslub */
+.submit-button {
+    background-color: #007bff; /* Tugma fon rangi */
+    color: white; /* Tugma matni rangi */
+    border: none; /* Chegarani olib tashlash */
+    padding: 10px 20px; /* Ichki bo'shliq */
+    border-radius: 4px; /* Radius berish */
+    cursor: pointer; /* Kursorni ko'rsatish */
+    font-size: 16px; /* Font o'lchami */
+    transition: background-color 0.3s ease; /* Animatsiya */
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Hover holatida tugma rangi */
+}
+
+/* O'chirish tasdiqlash uchun uslub */
+.delete-confirmation {
+    max-width: 500px; /* Maksimal kenglik */
+    margin: 20px auto; /* Markazlashtirish */
+    padding: 20px; /* Ichki bo'shliq */
+    border: 1px solid #ddd; /* Chegara */
+    border-radius: 8px; /* Radius */
+    background-color: #f9f9f9; /* Fon rangi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soya */
+    text-align: center; /* Matnni markazlashtirish */
+    position: relative; /* Animatsiyalar uchun */
+    transition: box-shadow 0.3s ease; /* Animatsiya */
+}
+
+.delete-confirmation:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover holatida soyani kuchaytirish */
+}
+
+/* O'chirish sarlavhasi */
+.delete-title {
+    font-size: 24px; /* Font o'lchami */
+    color: #333; /* Sarlavha rangi */
+    margin-bottom: 15px; /* Pastki bo'shliq */
+}
+
+/* O'chirish xabari */
+.delete-message {
+    font-size: 16px; /* Font o'lchami */
+    color: #555; /* Matn rangi */
+    margin-bottom: 20px; /* Pastki bo'shliq */
+}
+
+/* Forma tugmalari */
+.delete-buttons {
+    display: flex;
+    justify-content: center; /* Tugmalarni markazlashtirish */
+    gap: 10px; /* Tugmalar orasidagi masofa */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Tugma fon rangi (qizil) */
+    color: white; /* Matn rangi */
+    border: none; /* Chegara olib tashlandi */
+    padding: 10px 20px; /* Ichki bo'shliq */
+    border-radius: 4px; /* Radius */
+    cursor: pointer; /* Kursorni ko'rsatish */
+    font-size: 16px; /* Font o'lchami */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatsiya */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Hover holatida tugma rangi o'zgaradi */
+    transform: scale(1.05); /* Hover holatida kattalashtirish */
+}
+
+/* Bekor qilish tugmasi */
+.cancel-button {
+    background-color: #6c757d; /* Tugma fon rangi (gray) */
+    color: white; /* Matn rangi */
+    text-decoration: none; /* Ostki chiziqni olib tashlash */
+    padding: 10px 20px; /* Ichki bo'shliq */
+    border-radius: 4px; /* Radius */
+    font-size: 16px; /* Font o'lchami */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatsiya */
+}
+
+.cancel-button:hover {
+    background-color: #5a6268; /* Hover holatida tugma rangi o'zgaradi */
+    transform: scale(1.05); /* Hover holatida kattalashtirish */
+}
+/* Asosiy konteyner uchun uslub */
+.edit-form-container {
+    max-width: 600px; /* Maksimal kenglik */
+    margin: 30px auto; /* Markazlashtirish */
+    padding: 20px; /* Ichki bo'shliq */
+    border: 1px solid #ddd; /* Chegara */
+    border-radius: 10px; /* Radius */
+    background-color: #ffffff; /* Fon rangi */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soya */
+    transition: box-shadow 0.3s ease; /* Animatsiya */
+}
+
+.edit-form-container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Hover holatida soyani kuchaytirish */
+}
+
+/* Forma sarlavhasi */
+.form-title {
+    font-size: 28px; /* Font o'lchami */
+    color: #333; /* Sarlavha rangi */
+    margin-bottom: 20px; /* Pastki bo'shliq */
+    text-align: center; /* Markazlashtirish */
+}
+
+/* Forma uchun uslub */
+.edit-form {
+    display: flex;
+    flex-direction: column; /* Vertikal yo'nalishda joylashtirish */
+    gap: 15px; /* Forma elementlari orasidagi masofa */
+}
+
+/* Forma elementlari uchun uslub */
+.edit-form input[type="text"],
+.edit-form input[type="email"],
+.edit-form textarea {
+    width: 100%; /* To'liq kenglik */
+    padding: 12px; /* Ichki bo'shliq */
+    border: 1px solid #ccc; /* Chegara */
+    border-radius: 6px; /* Radius */
+    font-size: 16px; /* Font o'lchami */
+    transition: border-color 0.3s ease; /* Animatsiya */
+}
+
+.edit-form input[type="text"]:focus,
+.edit-form input[type="email"]:focus,
+.edit-form textarea:focus {
+    border-color: #007bff; /* Fokus holatida chegarani o'zgartirish */
+    outline: none; /* Fokus chizig'ini olib tashlash */
+}
+
+/* Submit tugmasi uchun uslub */
+.submit-button {
+    background-color: #28a745; /* Tugma fon rangi (yashil) */
+    color: white; /* Matn rangi */
+    border: none; /* Chegarani olib tashlash */
+    padding: 12px 20px; /* Ichki bo'shliq */
+    border-radius: 6px; /* Radius */
+    cursor: pointer; /* Kursorni ko'rsatish */
+    font-size: 18px; /* Font o'lchami */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatsiya */
+}
+
+.submit-button:hover {
+    background-color: #218838; /* Hover holatida tugma rangi o'zgaradi */
+    transform: scale(1.05); /* Hover holatida kattalashtirish */
+}
+/* O'chirish tasdiqlash uchun asosiy konteyner */
+.delete-confirmation-container {
+    max-width: 500px; /* Maksimal kenglik */
+    margin: 30px auto; /* Markazlashtirish */
+    padding: 30px; /* Ichki bo'shliq */
+    border: 1px solid #e0e0e0; /* Chegara */
+    border-radius: 12px; /* Radius */
+    background-color: #fff; /* Fon rangi */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soya */
+    text-align: center; /* Matnni markazlashtirish */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Animatsiya */
+}
+
+.delete-confirmation-container:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Hover holatida soyani kuchaytirish */
+    transform: translateY(-5px); /* Hover holatida yuqoriga ko'tarish */
+}
+
+/* O'chirish sarlavhasi */
+.delete-title {
+    font-size: 26px; /* Font o'lchami */
+    color: #333; /* Sarlavha rangi */
+    margin-bottom: 20px; /* Pastki bo'shliq */
+}
+
+/* O'chirish xabari */
+.delete-message {
+    font-size: 18px; /* Font o'lchami */
+    color: #555; /* Matn rangi */
+    margin-bottom: 25px; /* Pastki bo'shliq */
+}
+
+/* Tugmalar uchun uslub */
+.delete-buttons {
+    display: flex;
+    justify-content: center; /* Tugmalarni markazlashtirish */
+    gap: 15px; /* Tugmalar orasidagi masofa */
+}
+
+/* O'chirish tugmasi */
+.delete-button {
+    background-color: #dc3545; /* Tugma fon rangi (qizil) */
+    color: white; /* Matn rangi */
+    border: none; /* Chegarani olib tashlash */
+    padding: 12px 25px; /* Ichki bo'shliq */
+    border-radius: 8px; /* Radius */
+    cursor: pointer; /* Kursorni ko'rsatish */
+    font-size: 16px; /* Font o'lchami */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatsiya */
+}
+
+.delete-button:hover {
+    background-color: #c82333; /* Hover holatida tugma rangi o'zgaradi */
+    transform: scale(1.05); /* Hover holatida kattalashtirish */
+}
+
+/* Bekor qilish tugmasi */
+.cancel-button {
+    background-color: #6c757d; /* Tugma fon rangi (gray) */
+    color: white; /* Matn rangi */
+    text-decoration: none; /* Ostki chiziqni olib tashlash */
+    padding: 12px 25px; /* Ichki bo'shliq */
+    border-radius: 8px; /* Radius */
+    font-size: 16px; /* Font o'lchami */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animatsiya */
+}
+
+.cancel-button:hover {
+    background-color: #5a6268; /* Hover holatida tugma rangi o'zgaradi */
+    transform: scale(1.05); /* Hover holatida kattalashtirish */
+}

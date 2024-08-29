@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %} <!-- Static tagini yuklash -->
+
+{% block content %}
+<div class="post-entry">
+    <h2>{{ object.title }}</h2>
+    <h3>{{ object.author }}</h3>
+    <p>{{ object.body }}</p>
+</div>
+
+<div class="actions">
+    <a href="{% url 'post_edit' object.pk %}" class="action-link">
+        <img src="{% static 'images/refresh.png' %}" alt="Edit Icon" class="action-icon">
+        <span class="action-text">Postni tahrirlash</span>
+    </a>
+    <a href="{% url 'post_delete' object.pk %}" class="action-link">
+        <img src="{% static 'images/delete.png' %}" alt="Delete Icon" class="action-icon">
+        <span class="action-text">Postni o'chirish</span>
+    </a>
+</div>
+{% endblock content %}

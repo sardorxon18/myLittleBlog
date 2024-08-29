@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="icon" href="{% static 'images/anchor-text.png' %}" type="image/png">
+    <title>Sardorxon's site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="nav-left">
+                <h1><a href="{% url 'home' %}">Sardorxon's BLOG</a></h1>
+            </div>
+            <div class="nav-right">
+                <a href="{% url 'post_new' %}" class="add-post">
+                    <img src="{% static 'images/plus.png' %}" alt="icon" class="icon">
+                    <span class="add_matn">Yangi post qo'shish</span>
+                </a>
+            </div>
+
+        </header>
+    </div>
+    <div class="post_text">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="delete-confirmation-container">
+    <h1 class="delete-title">Postni o'chirish</h1>
+    <form action="" method="post" class="delete-form">
+        {% csrf_token %}
+        <p class="delete-message">“{{ object.title }}” postni o'chirishni xohlaysizmi?</p>
+        <div class="delete-buttons">
+            <input type="submit" value="O'chirish" class="delete-button">
+            <a href="{% url 'home' %}" class="cancel-button">Bekor qilish</a>
+        
+
+        </div>
+    </form>
+</div>
+{% endblock content %}

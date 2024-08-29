@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="edit-form-container">
+    <h1 class="form-title">Postni Yangilash</h1>
+    <form action="" method="post" class="edit-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Yangilash" class="submit-button">
+    </form>
+</div>
+{% endblock content %}
